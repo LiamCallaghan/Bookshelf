@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Background  from './component/common/Background'
+import Bookshelf from './component/common/Bookshelf'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/' component={Background}/>
+        <Route path='/' component={Bookshelf}/>
       </Switch>
     </BrowserRouter>
   )
