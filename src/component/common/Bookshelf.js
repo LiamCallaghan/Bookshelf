@@ -1,9 +1,10 @@
 import React from 'react'
+import BookEntry from '../books/BookEntry'
 
 class Bookshelf extends React.Component {
   state = {
-    newBooks: null,
-    oldBooks: null
+    newBooks: [{ title: 'weast', id: 1 }, { title: 'book', id: 2 }],
+    oldBooks: null,
   }
 
   render() {
@@ -16,7 +17,11 @@ class Bookshelf extends React.Component {
         <div className='shelving'></div>
         <h1>Books</h1>
         <div className='shelving'></div>
-        <h1>Last line</h1>
+        <div className='shelf'>
+          { this.state.newBooks.map(book => (
+            < BookEntry key={book.id} {...book} />
+          ))}
+        </div>
         <div className='shelving'></div>
       </section>
     )

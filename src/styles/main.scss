@@ -36,3 +36,18 @@ h1 {
   height: 90%;
   width: 5%;
 }
+
+.shelf {
+  display: flex;
+  margin: 0 5%;
+}
+
+.book-spine {
+  text-align: left;
+  border-style: solid;
+  margin: 10px;
+}
+
+.book-text {
+  transform: rotate(90deg);
+}
